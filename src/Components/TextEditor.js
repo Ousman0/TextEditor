@@ -12,7 +12,7 @@ const handleOnclick1=()=>{
     props.ShowAlert('Text Converted To UpperCase','success');
 };
 const handleOnclick2=()=>{
-    let Lowdata=Data.toUpperCase();
+    let Lowdata=Data.toLowerCase();
     setData(Lowdata);
     props.ShowAlert('Text Converted To LowerCase','success');
 };
@@ -90,7 +90,7 @@ const handleOnchange=(event)=>{
             </button>
         </div>
     </div>
-    <div className={`text-${props.Mode==='light'?'dark':'light'} align container`}>
+    <div className={`text-'dark' align container`}>
         <h2>Summery</h2>
         <p>
         {Data.length>0 ? Data.trim().split(/[ ]+/).length : 0} words and {Data.length} characters  
